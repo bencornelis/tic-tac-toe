@@ -1,8 +1,8 @@
 from .cell import Cell
 
 class Board:
-  def __init__(self):
-    self.dim = 3
+  def __init__(self, dim=3):
+    self.dim = dim
     self.cells = self._generate_cells()
 
   def clear(self):
