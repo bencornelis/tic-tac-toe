@@ -13,8 +13,8 @@ class Human(Player):
         try:
           row, col = int(row), int(col)
           return (
-            0 <= row <= 2 and
-            0 <= col <= 2 and
+            0 <= row < board.dim and
+            0 <= col < board.dim and
             board.is_cell_empty(row, col)
           )
         except ValueError:
